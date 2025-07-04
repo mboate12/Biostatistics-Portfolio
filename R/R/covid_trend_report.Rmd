@@ -47,3 +47,8 @@ ggplot(covid_clean, aes(x = date, y = new_cases, color = location)) +
   theme_minimal()
 
 
+# Interprations of Line graph
+    # The line graph shows daily new Covid-19 cases in the US, India and Brazil starting from january 2022
+    #Across all countries there is a noticable spike in early 2022, which correlates to the spread of the omnicron variant, after this peak there are daily declines in case number, however each country has it own unqiue flucations that shwocase local surges and from public health policies 
+    # The removal of zeroes and missing values, made trends more cleaer and focused on periods of active transmission
+    # This line graph provides a visual comparsion of the evolution of the pandemic across counties with large population and various healthcare infastrcuture 
