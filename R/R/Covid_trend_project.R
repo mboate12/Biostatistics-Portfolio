@@ -48,6 +48,5 @@ ggplot(covid_clean, aes(x = date, y = new_cases, color = location)) +
 
 
 
-
   
 
