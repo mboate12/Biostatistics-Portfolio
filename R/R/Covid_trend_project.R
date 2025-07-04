@@ -2,6 +2,7 @@
 # COVID-19 Trend Analysis in the US, India, and Brazil
 # Author: Mary Boateng 
    
+# Data set from: https://covid.ourworldindata.org/data/owid-covid-data.csv
 
 #Step 1: Set Working Directory
 setwd("C:/Users/mboat/OneDrive/covid_trend_Project")
