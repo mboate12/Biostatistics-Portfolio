@@ -1,7 +1,7 @@
 #  Hospital Ratings SQL Analysis
 
 ##  Project Overview
-This project uses real hospital data to explore how hospital types and states relate to their overall CMS quality ratings. It showcases beginner-level SQL skills like filtering, grouping, ordering, and basic aggregation.
+This project uses real hospital data to explore how hospital types and states relate to their overall CMS quality ratings. It includes SQL skills like filtering, grouping, ordering, and basic aggregation.
 
 ##  Queries Included
 1. Preview of the dataset
