@@ -1,2 +1,2 @@
 # Biostatistics-Portfolio
-Projects in R, SQL, and SAS from my MPH Biostatistics training.
+Features personal data analysis projects developed to demonstrate beginner-level technical proficiency in R, SQL, and SAS. These projects reflect foundational skills in data cleaning, exploratory analysis, and public health insights. They are actively being refined and expanded as I progress through my MPH in Biostatistics at the George Washington University Milken Institute School of Public Health.
