@@ -1,5 +1,5 @@
 # SQL Projects
-This folder contains SQL projects that demonstrate data querying, cleaning, aggregation, and analysis skills applied to healthcare and public health datasets.  
+This folder will contain SQL projects that demonstrate data querying, cleaning, aggregation, and analysis skills applied to healthcare and public health datasets.  
 
 ## 📂 Current Personal Projects
 - **Hospital Quality Analysis**  
