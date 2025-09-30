@@ -8,10 +8,10 @@ This folder will contain SAS programs and reports developed for **public health 
 
 ## 📚 Academic Projects  
 - **PUBH 6850 – Intro to SAS**  
-  Skills: Pending   
+  Skills: Pending...   
 
 - **PUBH 6864 – Applied Survival Analysis**  
-  Skills: Pending  
+  Skills: Pending... 
 
 ---
 
