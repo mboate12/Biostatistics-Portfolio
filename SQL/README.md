@@ -4,7 +4,7 @@ This folder contains SQL projects that demonstrate data querying, cleaning, aggr
 - **Hospital Quality Analysis**  
   Dataset: [CMS Hospital General Information](https://data.cms.gov/provider-data/dataset/xubh-q36u)  
   Skills: filtering, aggregation, handling NULLs, conditional logic, data quality checks, visualizations.  
-  Location: [hospital_analysis/](./hospital_analysis/)  
+  
 
 ---
 
