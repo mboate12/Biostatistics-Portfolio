@@ -1,0 +1,101 @@
+---
+title: "Lab Assignment 1"
+author: "Mary Boateng"
+date: "September 2, 2025"
+format: html
+editor: visual
+---
+
+# Section 1
+
+Calculate the solution to the following five exercises.
+
+## Q1: $$ 3\times 4 + 7 - 8 \div 13$$
+
+```{r}
+3 * 4 + 7 - 8 / 13
+```
+
+## Q2: $$e^{-3}$$
+
+```{r}
+exp(-3)
+```
+
+## Q3: $$\sqrt[4]{100}$$
+
+```{r}
+100^(1/4)
+```
+
+## Q4: $$ log_e(15.8)$$
+
+```{r}
+log(15.8)
+```
+
+## Q5: $$\sin\left(\frac{\pi}{6}\right)$$
+
+```{r}
+sin(pi / 6)
+```
+
+# Section 2
+
+Why would the code produce an error?
+
+x = 3
+
+y = 2
+
+x + Y
+
+The code produces an error because R is case-sensitive, and the variable 'Y' is not defined. The correct variable name should be 'y' (lowercase) instead of 'Y' (uppercase). Therefore, the expression should be 'x + y' to avoid the error. Code can be fixed by defining both variables or matching the case of the variables.
+
+## fixed code
+
+```{r}
+x=3
+y=2
+x+y
+```
+
+# Section 3
+
+Create a vector of the sequence of values 3,5,7,...,19,21
+
+```{r}
+vec <- seq(3, 21, by = 2)
+vec
+```
+
+# Section 4
+
+Determine if the values in the lab_vector variable are numeric
+
+```{r}
+lab_vector <- c(3, 6, 3.141592654, 3 + 4i)
+lab_vector
+```
+
+```{r}
+is.numeric(lab_vector)
+```
+
+what does data type does the code `3 + 4i` produce?
+
+```{r}
+typeof(3 + 4i)
+```
+
+The code `3 + 4i` produces a complex number data type in R. The 'i' denotes the imaginary unit, so `3 + 4i` represents a complex number with a real part of 3 and an imaginary part of 4.
+
+# Section 5
+
+Create a vector of 100 values assigned to the variable `height`that rounds the values to one decimal place and is taken from a normal distribution with a mean $\large\mu = 172$, and a standard deviation, $\large\sigma = 10$.
+
+```{r}
+set.seed(123)  # Setting seed for reproducibility
+height <- round(rnorm(100, mean = 172, sd = 10), 1)
+height
+```

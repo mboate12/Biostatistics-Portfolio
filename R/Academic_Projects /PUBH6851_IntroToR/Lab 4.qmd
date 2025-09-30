@@ -1,0 +1,130 @@
+---
+title: "Lab Assignment  4"
+author: "Mary Boateng"
+Date: " September 24, 2025"
+format: html
+editor: visual
+---
+
+## Setup
+
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(ggthemes)
+library(ggstatsplot)
+```
+
+import and read data
+
+```{r}
+dfr <- readr::read_csv("PlottingData.csv")
+```
+
+## Section 1
+
+A box-and-whisker plot with the categorical variable `Ventilation` and the numerical variable `CRP`
+
+```{r}
+dfr %>% 
+  ggplot2::ggplot(
+    aes(
+      x = Ventilation,
+      fill = Ventilation,
+      y = CRP
+    )
+  ) + 
+  ggplot2::geom_boxplot() +
+  ggplot2::scale_fill_brewer(
+    palette = "BuGn",
+    direction = 1
+  ) +
+  labs(
+    title = "CRP Levels by Ventilation Status",
+    y = "CRP (C-reactive protein)",
+    x = "Ventilation"
+  )
+
+
+
+```
+
+## Section 2
+
+Here is a scatter plot (grouped by the levels of the `Ventilation`) made With the a categorical variable `Ventilation` and the numerical variable `CRP`
+
+```{r}
+dfr %>% 
+  ggplot2::ggplot(
+    aes(
+      x = Ventilation,
+      fill = Ventilation,
+      y = CRP
+    )
+  ) + 
+  ggplot2::geom_jitter(
+    shape = 21,
+    size = 2,
+    width = 0.2,
+    alpha = 0.7
+  ) +
+  ggplot2::scale_fill_brewer(
+    palette = "Reds",
+    direction = 1
+  ) +
+  labs(
+    title = "CRP Levels by Ventilation Status",
+    y = "CRP (C-reactive protein)",
+    x = "Ventilation"
+  )
+```
+
+## Section 3
+
+Look up what a mosaic plot is. Import an appropriate library and create a mosaic plot of the variables
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(ggmosaic)
+
+dfr %>%
+  ggplot(aes(x = Obesity, fill = Ventilation)) +
+  geom_bar(position = "fill", color = "white") +
+  scale_fill_brewer(palette = "Pastel2") +
+  labs(
+    title = "Proportion of Ventilation by Obesity",
+    x = "Obesity",
+    y = "Proportion",
+    fill = "Ventilation"
+  ) +
+  theme_minimal()
+
+
+```
+
+Another way to create a mosaic plot is by using the `vcd` package.
+
+```{r}
+library(vcd)
+
+# Mosaic plot of Ventilation vs Obesity
+mosaic(~ Ventilation + Obesity, data = dfr,
+       shade = TRUE, legend = TRUE,
+       main = "Mosaic Plot of Ventilation and Obesity")
+
+```
+
+Add color to the mosaic plot that used the `vcd` package
+
+```{r}
+library(vcd)
+library(RColorBrewer)
+
+mosaic(~ Ventilation + Obesity, data = dfr,
+       gp = gpar(fill = brewer.pal(3, "Set3")),
+       main = "Mosaic Plot of Ventilation and Obesity")
+
+
+```

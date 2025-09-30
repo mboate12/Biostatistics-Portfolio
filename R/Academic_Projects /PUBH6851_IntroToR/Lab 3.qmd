@@ -1,0 +1,69 @@
+---
+title: " Lab Assignment 3"
+author: "Mary Boateng"
+date: "September 16,2025"
+format: html
+---
+
+Import library and set working directory
+
+```{r}
+library(data.table)
+getwd() # find address of  directory
+setwd(getwd()) # set working directory to current directory
+```
+
+Read in the data
+
+```{r}
+data <-fread("heart_failure.csv")
+
+```
+
+## Section 1
+
+Determine the unique elements for the `smoking` variable.
+
+```{r}
+unique(data$smoking)
+```
+
+## Section 2
+
+Select all the observations for the `smoking` variable only.
+
+```{r}
+data[, .(smoking)] # select smoking variable only
+```
+
+## Section 3
+
+Select all the observations only for those who do not smoke
+
+```{r}
+data[smoking == "No"] # select observations for non-smokers only
+```
+
+## Section 4
+
+Select the observations in rows 100 through 110 and show only the `diabetes` and `smoking` variables.
+
+```{r}
+data[100:110, .(diabetes, smoking)] # select rows 100 to 110 for diabetes and smoking variables only
+```
+
+## Section 5
+
+Select all the observations for those who smoked and died.
+
+```{r}
+data[smoking == "Yes" & death == "Yes"] # select observations for smokers who died
+```
+
+## Section 6
+
+Select all the observations for those who were either female or who did not smoke or who has diabetes.
+
+```{r}
+data[sex == "female"|smoking =="No" | diabetes == "Yes"]
+```
