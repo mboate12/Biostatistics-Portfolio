@@ -1,0 +1,31 @@
+# Hospital Quality Analysis (SQL Project)
+
+This project analyzes U.S. hospital quality ratings using SQL. The dataset comes from the [CMS Hospital General Information](https://data.cms.gov/provider-data/dataset/xubh-q36u).  
+
+## 🎯 Objectives
+- Explore hospital ratings distribution across the U.S.  
+- Compare hospital performance by type and location  
+- Assess the relationship between emergency services and hospital ratings  
+- Showcase SQL skills for biostatistics and healthcare analytics  
+
+---
+
+## 🛠️ Skills Demonstrated
+- Data exploration (`LIMIT`, `PRAGMA`)  
+- Filtering and ordering (`WHERE`, `ORDER BY`)  
+- Aggregation (`COUNT`, `AVG`, `GROUP BY`)  
+- Data quality checks (`IS NULL`)  
+- Conditional aggregation (`CASE WHEN`)  
+- Data cleaning with `TEMP TABLE`  
+
+---
+
+## 📄 Key Queries
+
+### 1. Distribution of Ratings
+```sql
+SELECT "Hospital overall rating",
+       COUNT(*) AS num_hospitals
+FROM hospital_info
+GROUP BY "Hospital overall rating"
+ORDER BY "Hospital overall rating";
