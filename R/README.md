@@ -1,8 +1,12 @@
-# R Projects
-This folder includes R scripts and reports for public health data analysis.
+# R Projects  
 
-You’ll find:
-- Datasets from Our World in Data or CDC
-- RMarkdown reports
-- Visualizations using ggplot2
-- Code using dplyr, tidyr, etc.
+This folder contains R scripts and reports developed for **public health data analysis**. Projects include both **academic work** from my MPH in Biostatistics at GWU and **personal analyses** to strengthen technical skills.  
+
+## Contents  
+- **Academic Projects** – Coursework and research completed during the MPH program  
+- **Personal Projects** – Independent data explorations and assessments  
+- **RMarkdown Reports** – Reproducible analyses with narrative and visualizations  
+- **Visualizations** – Graphs and plots created with `ggplot2`  
+- **Data Wrangling** – Code using `dplyr`, `tidyr`, and related packages  
+
+These projects demonstrate skills in **data cleaning, exploratory analysis, and visualization**, with applications in public health and beyond.  
