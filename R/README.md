@@ -10,15 +10,15 @@ This folder contains R scripts and reproducible reports for **public health and 
 ## 📚 Academic Projects  
 - **PUBH 6851 – Introduction to R for Public Health**  
   Skills:
-  - Managing and cleaning data in R using base functions and the tidyverse (`dplyr`, `tidyr`) for filtering, recoding, joining, and reshaping datasets.  
-- Creating and customizing visualizations with `ggplot2`, applying the grammar of graphics to explore and present public health data.  
+  - Managing and cleaning data in R using base functions and the tidyverse (`dplyr`, `tidyr`) for filtering, recoding, joining, and reshaping datasets.
+  -  Creating and customizing visualizations with `ggplot2`, applying the grammar of graphics to explore and present public health data.  
  
 - **PUBH 6862 – Applied Linear Regression Analysis**  
   Pending...
 
 ---
 
-## 💡 Skills Highlighted   
+## 💡 Skills in Development   
 - Data wrangling with `dplyr`, `tidyr`, and `stringr`  
 - Visualization using `ggplot2` (scatter, bar, mosaic, survival curves)  
 - Reproducible reports with RMarkdown/Quarto  
@@ -28,4 +28,4 @@ This folder contains R scripts and reproducible reports for **public health and 
 
 ---
 
-📌 *Note:* Each project includes its own `.R` or `.qmd`/`.Rmd` file with documented code, narrative, and interpretation of results.  
+📌 *Note:* Each project may include its own `.R` or `.qmd`/`.Rmd` file with documented code, narrative, and interpretation of results.  
