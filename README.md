@@ -1,2 +1,2 @@
 # Biostatistics-Portfolio
-Personal data analysis projects developed to demonstrate beginner-level technical proficiency in R, SQL, and SAS. These projects reflect foundational skills in data cleaning, exploratory analysis, and public health insights. They are actively being refined and expanded as I progress through my MPH in Biostatistics at the George Washington University Milken Institute School of Public Health.
+Beginner-friendly data analysis projects in R, SQL, SAS, Python, and related tools. These showcase foundational skills in data cleaning, exploratory analysis, and public health applications. Actively refined as I progress through my MPH in Biostatistics at GWU’s Milken Institute School of Public Health.
